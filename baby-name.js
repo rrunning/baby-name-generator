@@ -8,7 +8,7 @@ var girlNames = ['Sarah', 'Kimberly', 'Amanda', 'Emily', 'Megan', 'Hope', 'Mia',
 
 
 function addNames(){
-	var lastName = "Running";
+	var lastName = lastNameInput;
 	document.getElementById("baby-name").innerHTML = firstName + ' ' + middleName + ' ' + lastName;
 };
 
