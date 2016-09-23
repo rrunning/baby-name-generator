@@ -7,11 +7,11 @@ function addNames(){
 		alert('Please select whether you want to see boy names or girl names.')
 		return;
 	}
-	if(document.getElementById('last-name').value == ""){
+	var lastNameInput = document.getElementById('last-name').value;
+	if(lastNameInput == ""){
 		alert('Please enter a last name.');
 		return;
 	}
-	var lastNameInput = document.getElementById('last-name').value;
 	var lastName = lastNameInput;
 	var firstName = random(arrayGoodness);
 	var middleName = random(arrayGoodness);
