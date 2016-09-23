@@ -1,0 +1,23 @@
+body {
+	background-color: #ffffcc;
+	font-family: 'Indie Flower', cursive;
+}
+.header {
+	text-align: center;
+	margin-top: 125px;
+	font-size: 24px;
+}
+.form {
+	text-align: center;
+	font-size: 20px;
+}
+.button {
+	text-align: center;
+	font-size: 14px;
+	
+}
+.name {
+	text-align: center;
+	font-size: 20px;
+}
+

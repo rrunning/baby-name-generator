@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<style>
+		@import 'https://fonts.googleapis.com/css?family=Indie+Flower';
+		</style>
 		<title>Baby Name Generator</title>
+		<link rel="stylesheet" type="text/css" href="baby-name.css">
 	</head>
 	<body>
-		<h1>Baby Name Generator</h1>
-		<form>
-			<label>
-				What is your last name?
-				<input id="last-name" type="text" name="lastname">
-			</label>
-			<br>
-			<label>
-				Boy Name: 
-				<input id="boy" type="radio" name="gender">
-			</label>
-			<label>
-				Girl Name: 
-				<input id="girl" type="radio" name="gender">
-			</label>
-		</form>
+		<div class="header">
+			<h1>Baby Name Generator</h1>
+		</div>
+		<div class="form">
+			<form>
+				<label>
+					What is your last name?
+					<input id="last-name" type="text" name="lastname">
+				</label>
+				<br>
+				<label>
+					Boy Name: 
+					<input id="boy" type="radio" name="gender" onclick="changeColor()">
+				</label>
+				<label>
+					Girl Name: 
+					<input id="girl" type="radio" name="gender" onclick="changeColor()">
+				</label>
+			</form>
+		</div>
 		<br>
-		<button onclick="addNames()">Generate Name</button>
-		<h2 id="baby-name"></h2>
+		<div class="button">
+			<button onclick="addNames()">Generate Name</button>
+		</div>
+		<div class="name">
+			<h2 id="baby-name"></h2>
+		</div>		
 		<script src="baby-name.js"></script>
 	</body>
 </html>
